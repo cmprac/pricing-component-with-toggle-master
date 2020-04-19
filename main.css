@@ -1,9 +1,11 @@
 html{
     font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
     text-align: center;
     color: hsl(232, 13%, 33%);
     box-sizing: border-box;
     background-color: hsl(240, 78%, 98%);
+    background-image: url(images/bg-top.svg);
 }
 
 .attribution { 
@@ -17,7 +19,7 @@ html{
 .container{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;    
 }
 
 .switch{
@@ -87,7 +89,7 @@ html{
 /************* title block ********************/
 
 .switch-block{
-    background-image: url(images/bg-top.svg);
+    
     margin-bottom: 3em;
 }
 
@@ -95,33 +97,38 @@ html{
 .plan {   
     margin: 30px 20px;
     border-radius: 5px;
-    padding: 20px;
-    background-color: white;
-    
+    padding: 30px 50px;
+    background-color: white;    
+    width: 60vw;
 }
 
 .plan>a{   
     display: block;
     text-decoration: none;
-    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));;
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     color: #fff;
-    padding: 10px;
+    padding: 15px;
     margin-top: 20px;
     border-radius: 5px;
     text-transform: uppercase;
-    font-size: 0.7em;
-    font-weight: 500;
-    letter-spacing: 2px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
     
 }
 
 .plan.active>a{   
+    display: block;
     text-decoration: none;
-    background-color: #FFF;
+    background-image: linear-gradient(to right, white,white);
     color: hsl(237, 63%, 64%);
-    padding: 2px 6px 2px 6px;
+    padding: 15px;
+    margin-top: 20px;
     border-radius: 5px;
-    
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
 }
 
 .plan.active{
@@ -130,11 +137,33 @@ html{
     
 }
 
-.monthly-price, .annually-price{
+.plan-title{
     font-weight: 700;
 }
 
+.monthly-price, .annually-price{
+    font-weight: 700;
+    font-size: 3em;
+    margin: 0.5em 0;
+}
+
+.monthly-price{
+    display: none;
+}
+
 .plan-detail{
-    
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-detail-item{
+    border-top: 1px hsl(234, 14%, 74%) solid;
+    padding: 1.2rem;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.plan-detail-item:last-child{
+    border-bottom: 1px hsl(234, 14%, 74%) solid;
 }
 /* card button */

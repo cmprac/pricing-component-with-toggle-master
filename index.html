@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="main.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="main.js"></script>
 
   <title>Frontend Mentor | [Pricing Component]</title>
 
@@ -20,7 +21,7 @@
       <h1 id="title">Our Pricing</h1>
       Annually
       <label class="switch">
-        <input type="checkbox">
+        <input id="priceSwtichCb" type="checkbox" onchange="switchPrice()">
         <span class="slider round"></span>
       </label>
       Monthly
@@ -30,46 +31,42 @@
       <div class="monthly-price">&dollar;19.99</div>
       <div class="annually-price">&dollar;199.99</div>
       <div class="plan-detail">
-        500 GB Storage
-        2 Users Allowed
-        Send up to 3 GB
+        <span class="plan-detail-item">500 GB Storage</span>
+        <span class="plan-detail-item">2 Users Allowed</span>
+        <span class="plan-detail-item">Send up to 3 GB</span>
       </div>
       <a href="#" class="btn">Learn More</a>
     </div>
 
     <div class="plan active">
-      Professional
-      &dollar;24.99
-      &dollar;249.99
-      1 TB Storage
-      5 Users Allowed
-      Send up to 10 GB
+      <div class="plan-title">Professional</div>
+      <div class="monthly-price">&dollar;24.99</div>
+      <div class="annually-price">&dollar;249.99</div>
+      <div class="plan-detail">
+        <span class="plan-detail-item">1 TB Storage</span>
+        <span class="plan-detail-item">5 Users Allowed</span>
+        <span class="plan-detail-item">Send up to 10 GB</span>
+      </div>
       <a href="#" class="btn">Learn More</a>
     </div>
 
     <div class="plan">
-      Master
-      &dollar;39.99
-      &dollar;399.99
-      2 TB Storage
-      10 Users Allowed
-      Send up to 20 GB
+      <div class="plan-title">Master</div>
+      <div class="monthly-price">&dollar;39.99</div>
+      <div class="annually-price">&dollar;399.99</div>
+      <div class="plan-detail">
+        <span class="plan-detail-item">2 TB Storage</span>
+        <span class="plan-detail-item">10 Users Allowed</span>
+        <span class="plan-detail-item">Send up to 20 GB</span>
+      </div>
       <a href="#" class="btn">Learn More</a>
     </div>
-  </div>
 
 
-
-
-
-
-
-
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">CM</a>.
+    </div>
 </body>
 
 </html>
