@@ -1,0 +1,23 @@
+{
+    "basic": {
+        "monthly": 19.99,
+        "annually": 199.99,
+        "storage": "500 GB",
+        "user": 2,
+        "send": 3
+    },
+    "professional": {
+        "monthly": 24.99,
+        "annually": 249.99,
+        "storage": "1 TB",
+        "user": 5,
+        "send": 10
+    },
+    "master": {
+        "monthly": 39.99,
+        "annually": 399.99,
+        "storage": "2 TB",
+        "user": 10,
+        "send": 20
+    }
+}
